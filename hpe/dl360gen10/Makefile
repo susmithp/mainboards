@@ -10,56 +10,6 @@ image.bin:  kernel
 	utk \
 		  -xzPath  /usr/bin/xz \
 		ROM.bin \
-                remove TraceHubStatusCodeHandlerRuntimeDxe \
-                remove TraceHubStatusCodeHandlerSmm \
-                remove StatusCodeHandlerRuntimeDxeUsb \
-                remove DataHubDxe \
-                remove HpBootMenuApp \
-                remove TxtDxe \
-                remove HstiIhvProviderDxe \
-                remove LegacyRegion2 \
-                remove EbcDxe \
-                remove LegacyInterrupt \
-                remove PciHotPlug \
-                remove HwpLvtSmm \
-                remove IsPlatformSupportWhea \
-                remove WheaSupport \
-                remove WheaErrorInj \
-                remove WheaPlatformBoot \
-                remove WheaErrorLog \
-                remove LastBootErrorLog \
-                remove McBankErrorInjection \
-                remove OpaPlatCfg \
-                remove DataHubStdErrDxe \
-                remove HpLogStdErrToMem \
-                remove HpBiosLogToAhsDxe \
-                remove HpBiosLogToAhsSmm \
-                remove ServerConfigLock \
-                remove ServerConfigLockDxe \
-                remove IntelligentProvisioningApp \
-                remove ErrorInformationApp \
-                remove ImlViewApp \
-                remove EmbeddedDiagsApp \
-                remove HpPlotPciRebootTestDriver \
-                remove HpNvDimmDxe \
-                remove HpNvDimmBlkIoDxe \
-                remove NvDimmFwUpdate \
-                remove HpType10NvdimmPowerMonitorDxe \
-                remove FirmwarePerformanceSmm \
-                remove HpType10NvdimmCommonDataDxe \
-                remove HpNvDimmMemScan \
-                remove HpNvDimmTelemetryDxe \
-                remove BackupRestore \
-                remove HpBackupRestoreDxe \
-                remove HpSecureErase \
-                remove HpSecureEraseDxe \
-                remove TerminalDxe \
-                remove IsaSerialDxe \
-                remove LegacyBiosDxe \
-                remove HpLegacyBootDxe \
-                remove LegacyBiosPlatform \
-                remove HpPostCodeWorkerDxe \
-                remove HpPostCodeWorkerSmm \
 		replace_pe32 Shell kernel  \
 	save image.bin
 
