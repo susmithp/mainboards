@@ -58,6 +58,7 @@ uroot:
 		github.com/u-root/u-root/cmds/core/mount \
 		github.com/u-root/u-root/cmds/core/sshd \
 		github.com/u-root/u-root/cmds/core/dd \
+		github.com/u-root/u-root/cmds/core/hexdump \
 		github.com/u-root/u-root/cmds/core/cat \
 		github.com/u-root/u-root/cmds/core/scp \
 		github.com/u-root/u-root/cmds/core/dmesg \
