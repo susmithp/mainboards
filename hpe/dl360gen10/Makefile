@@ -52,6 +52,7 @@ uroot:
 	(cd linux && make oldconfig && make -j32 modules)
 	mkdir -p lib/modules
 	cp ./linux/drivers/net/usb/cdc_ether.ko lib/modules
+	(cd linux && make clean)
 	u-root -build=bb -uinitcmd="hostname dl360Gen10" \
 		-files lib/modules/* \
 		github.com/u-root/u-root/cmds/core/hostname \
