@@ -56,6 +56,7 @@ uroot:
 		github.com/u-root/u-root/cmds/core/elvish \
 		github.com/u-root/u-root/cmds/core/more \
 		github.com/u-root/u-root/cmds/core/mount \
+		github.com/u-root/u-root/cmds/core/modprobe \
 		github.com/u-root/u-root/cmds/core/sshd \
 		github.com/u-root/u-root/cmds/core/dd \
 		github.com/u-root/u-root/cmds/core/hexdump \
