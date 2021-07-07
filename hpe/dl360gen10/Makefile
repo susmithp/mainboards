@@ -50,6 +50,7 @@ netbooturoot:
 uroot:
 	cp config-$(CONFIG) linux/.config
 	(cd linux && make oldconfig && make -j32 modules)
+	mkdir -p lib/modules
 	cp ./linux/drivers/net/usb/*.ko lib/modules
 	cp ./linux/drivers/net/*.ko lib/modules
 	(cd linux && make clean)
