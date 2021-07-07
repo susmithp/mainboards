@@ -50,11 +50,12 @@ netbooturoot:
 uroot:
 	cp config-$(CONFIG) linux/.config
 	(cd linux && make oldconfig && make -j32 modules)
-	mkdir -p lib/modules
-	cp ./linux/drivers/net/usb/*.ko lib/modules
+	mkdir -p lib/modules/usb
+	cp ./linux/drivers/net/usb/*.ko lib/modules/usb
+	cp ./linux/drivers/net/*.ko lib/modules
 	(cd linux && make clean)
 	u-root -build=bb -uinitcmd="hostname dl360Gen10" \
-		-files lib/modules/* \
+		-files lib/modules/*/*.ko \
 		github.com/u-root/u-root/cmds/core/hostname \
 		github.com/u-root/u-root/cmds/core/init \
 		github.com/u-root/u-root/cmds/core/ls \
