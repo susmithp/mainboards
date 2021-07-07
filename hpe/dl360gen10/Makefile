@@ -52,7 +52,6 @@ uroot:
 		github.com/u-root/u-root/cmds/core/hostname \
 		github.com/u-root/u-root/cmds/core/init \
 		github.com/u-root/u-root/cmds/core/ls \
-		github.com/u-root/u-root/cmds/core/lsusb \
 		github.com/u-root/u-root/cmds/core/ip \
 		github.com/u-root/u-root/cmds/core/elvish \
 		github.com/u-root/u-root/cmds/core/echo \
