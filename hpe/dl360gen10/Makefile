@@ -98,6 +98,6 @@ getrom:
 	@echo and run that kernel via qemu
 
 geturoot:
-	go get -u github.com/u-root/u-root
-	go install github.com/u-root/u-root
+	go get -u github.com/u-root/u-root@latest
+	go install github.com/u-root/u-root@latest
 
