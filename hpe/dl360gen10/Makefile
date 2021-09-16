@@ -87,7 +87,7 @@ getkernel:
 	mv linux-$(STABLE) linux
 getfiano:
 	go get -u github.com/linuxboot/fiano/cmds/utk@latest
-	go install github.com/linuxboot/fiano/cmds/utk
+	go install github.com/linuxboot/fiano/cmds/utk@latest
 getrom:
 	@echo If you plan to flash to hardware,
 	@echo you will need to get a rom imagei
