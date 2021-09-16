@@ -86,7 +86,7 @@ getkernel:
 	xzcat kernel.xz | tar x
 	mv linux-$(STABLE) linux
 getfiano:
-	go get -u github.com/linuxboot/fiano/cmds/utk
+	go get -u github.com/linuxboot/fiano/cmds/utk@latest
 	go install github.com/linuxboot/fiano/cmds/utk
 getrom:
 	@echo If you plan to flash to hardware,
