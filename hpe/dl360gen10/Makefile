@@ -99,4 +99,5 @@ getrom:
 
 geturoot:
 	go get -u github.com/u-root/u-root
+	go install github.com/u-root/u-root
 
