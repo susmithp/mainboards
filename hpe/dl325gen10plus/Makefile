@@ -15,7 +15,7 @@ image.bin:  kernel
 		replace_pe32 Shell kernel  \
 	save image.bin
 
-kernel: uroot injectkeys bzImage
+kernel: uroot bzImage
 	cp linux/arch/x86/boot/bzImage kernel
 
 netboot: netbooturoot bzImage
@@ -69,6 +69,9 @@ uroot:
 		github.com/u-root/u-root/cmds/boot/*
 
 	cp /tmp/initramfs.linux_amd64.cpio .
+	lzma -k -f initramfs.linux_amd64.cpio
+	ls -l initramfs*
+	cp *lzma linux
 
 injectkeys: 
 ifneq ($(KEYPATH),"")
