@@ -13,6 +13,18 @@ image.bin:  kernel
 		  -xzPath  /usr/bin/xz \
 		ROM.bin \
 		remove AhsEventWorkerDxe \
+		remove Udp4Dxe \
+		remove Udp6Dxe \
+		remove Dhcp4Dxe \
+		remove Dhcp6Dxe \
+		remove Mtftp4Dxe \
+		remove Mtftp6Dxe \
+		remove DnsDxe \
+		remove HttpDxe \
+		remove TlsDxe \
+		remove HpWebEngineDxe \
+		remove HpFtp4Dxe \
+		remove IScsiDxe \
 		replace_pe32 Shell kernel  \
 	save image.bin
 
