@@ -38,10 +38,8 @@ netbooturoot:
 		github.com/u-root/u-root/cmds/core/ls \
 		github.com/u-root/u-root/cmds/core/ip \ 
 		github.com/u-root/u-root/cmds/core/elvish \   
-		github.com/u-root/u-root/cmds/core/scp \
 		github.com/u-root/u-root/cmds/core/pci \
 		github.com/u-root/u-root/cmds/core/dhclient \
-		github.com/u-root/u-root/cmds/core/rsdp \
 		github.com/u-root/u-root/cmds/boot/*
 
 	cp /tmp/initramfs.linux_amd64.cpio .
@@ -53,19 +51,15 @@ uroot:
 	u-root -build=bb -uinitcmd="hostname dl360Gen10" \
 		github.com/u-root/u-root/cmds/core/hostname \
 		github.com/u-root/u-root/cmds/core/init \
-		github.com/u-root/u-root/cmds/core/id \
 		github.com/u-root/u-root/cmds/core/cat \
 		github.com/u-root/u-root/cmds/core/ls \
 		github.com/u-root/u-root/cmds/core/ip \
 		github.com/u-root/u-root/cmds/core/elvish \
 		github.com/u-root/u-root/cmds/core/more \
 		github.com/u-root/u-root/cmds/core/mount \
-		github.com/u-root/u-root/cmds/core/scp \
 		github.com/u-root/u-root/cmds/core/dmesg \
 		github.com/u-root/u-root/cmds/core/grep \
-		github.com/u-root/u-root/cmds/core/pci \
 		github.com/u-root/u-root/cmds/core/dhclient \
-		github.com/u-root/u-root/cmds/core/rsdp \
 		github.com/u-root/u-root/cmds/boot/*
 
 	cp /tmp/initramfs.linux_amd64.cpio .
