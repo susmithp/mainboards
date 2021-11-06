@@ -49,18 +49,10 @@ netbooturoot:
 
 uroot:
 	u-root -build=bb -uinitcmd="hostname dl360Gen10" \
-		github.com/u-root/u-root/cmds/core/hostname \
 		github.com/u-root/u-root/cmds/core/init \
-		github.com/u-root/u-root/cmds/core/cat \
-		github.com/u-root/u-root/cmds/core/ls \
-		github.com/u-root/u-root/cmds/core/ip \
 		github.com/u-root/u-root/cmds/core/elvish \
-		github.com/u-root/u-root/cmds/core/more \
-		github.com/u-root/u-root/cmds/core/mount \
 		github.com/u-root/u-root/cmds/core/dmesg \
-		github.com/u-root/u-root/cmds/core/grep \
-		github.com/u-root/u-root/cmds/core/dhclient \
-		github.com/u-root/u-root/cmds/boot/*
+		github.com/u-root/u-root/cmds/core/grep 
 
 	cp /tmp/initramfs.linux_amd64.cpio .
 	lzma -k -f initramfs.linux_amd64.cpio
