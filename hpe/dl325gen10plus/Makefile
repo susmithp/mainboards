@@ -49,6 +49,7 @@ netbooturoot:
 
 uroot:
 	u-root -build=bb -uinitcmd="hostname dl360Gen10" \
+		github.com/u-root/u-root/cmds/core/hostname \
 		github.com/u-root/u-root/cmds/core/init \
 		github.com/u-root/u-root/cmds/core/elvish \
 		github.com/u-root/u-root/cmds/core/dmesg \
