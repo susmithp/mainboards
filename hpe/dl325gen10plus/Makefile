@@ -12,6 +12,7 @@ image.bin:  kernel
 	utk \
 		  -xzPath  /usr/bin/xz \
 		ROM.bin \
+		remove AhsEventWorkerDxe \
 		replace_pe32 Shell kernel  \
 	save image.bin
 
