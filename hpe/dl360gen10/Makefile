@@ -1,6 +1,6 @@
 MAJOR ?= 5
-STABLE = $(MAJOR).4
-CONFIG ?= $(MAJOR).4.0
+STABLE = $(MAJOR).10
+CONFIG ?= $(MAJOR).10.0
 KEYPATH ?= ""
 
 default: build
